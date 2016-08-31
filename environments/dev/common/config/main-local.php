@@ -1,11 +1,15 @@
 <?php
+$dbName = getenv('DEV_DB_NAME');
+$dbUsername = getenv('DEV_DB_USERNAME');
+$dbPassword = getenv('DEV_DB_PASSWORD');
+
 return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => "pgsql:host=localhost;port=5432;dbname=yii2api-dev",
-            'username' => 'root',
-            'password' => '',
+            'dsn' => "pgsql:host=localhost;port=5432;dbname=$dbName",
+            'username' => $dbUsername,
+            'password' => $dbPassword,
             'charset' => 'utf8',
         ],
         'mailer' => [
