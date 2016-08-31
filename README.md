@@ -13,8 +13,9 @@ Yii2-advanced-api-skeleton is based on [Yii2 App Advanced Template](https://gith
    ```
 2. Install dependencies with composer ```composer install```
 3. Run ``` php init --env=Development``` to initialize the application with development environment
-4. Create PostgreSQL database yii2api-dev and adjust the ```components['db']``` configuration in ```common/config/main-local.php```
-5. Apply migrations with console command ```php yii migrate```
+4. Create PostgreSQL database yii2api-dev
+5. ```cp .env.example .env``` and adjust configuration in ```.env``` file
+6. Apply migrations with console command ```php yii migrate```
 
 ### Available URL Rules
 -------------------
